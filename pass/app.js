@@ -6,13 +6,30 @@ Password Protected
 
 
 */
-inFirst = document.getElementById("first")
-inSecond = document.getElementById("second")
-dvOutcome = document.getElementById("outcome")
-function submit(){
-    if (inFirst.value == "Username" && inSecond.value == "Password"){
-        dvOutcome.innerHTML = "Success"
-    }else{
-        dvOutcome.innerHTML = "Wrong Information"
-    }
+
+/*
+Create an application with two input fields and one button.
+
+When the button is clicked, verify the user has written these 
+(exact) strings in the first and second field:
+First field should be  "Username"
+Second field should be  "Password"
+*/
+//Password Protected
+function password() {
+    let passWord = txtWord.value;
+    let word = `monkey`;
+    txtWord.value = "";
+  
 }
+
+function username(){
+    let userName = txtName.value;
+    let name = `Mmmm`;
+    txtName = "";
+}
+if( (name == "Mmmm") && (word == "monkey") ) {
+    let display = `Success`;
+} else{let display = `wrong information`;}
+
+
